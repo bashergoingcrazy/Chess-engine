@@ -1,11 +1,11 @@
 #include "bitboard.h"
+#include "attack_tables.h"
+#include <iostream>
 
-using namespace std;
 
 int main(){
 
-    Bitboard queen;
-    print_bitboard(queen);
+    Attacks atk;
     return 0;
 }
 

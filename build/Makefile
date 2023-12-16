@@ -129,6 +129,30 @@ my_program/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/build
 .PHONY : my_program/fast
 
+attack_tables.o: attack_tables.cpp.o
+.PHONY : attack_tables.o
+
+# target to build an object file
+attack_tables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/attack_tables.cpp.o
+.PHONY : attack_tables.cpp.o
+
+attack_tables.i: attack_tables.cpp.i
+.PHONY : attack_tables.i
+
+# target to preprocess a source file
+attack_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/attack_tables.cpp.i
+.PHONY : attack_tables.cpp.i
+
+attack_tables.s: attack_tables.cpp.s
+.PHONY : attack_tables.s
+
+# target to generate assembly for a file
+attack_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/attack_tables.cpp.s
+.PHONY : attack_tables.cpp.s
+
 bitboard.o: bitboard.cpp.o
 .PHONY : bitboard.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_program"
+	@echo "... attack_tables.o"
+	@echo "... attack_tables.i"
+	@echo "... attack_tables.s"
 	@echo "... bitboard.o"
 	@echo "... bitboard.i"
 	@echo "... bitboard.s"

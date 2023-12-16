@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/my_program.dir/attack_tables.cpp.o"
+  "CMakeFiles/my_program.dir/attack_tables.cpp.o.d"
   "CMakeFiles/my_program.dir/bitboard.cpp.o"
   "CMakeFiles/my_program.dir/bitboard.cpp.o.d"
   "CMakeFiles/my_program.dir/main.cpp.o"
