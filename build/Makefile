@@ -177,6 +177,30 @@ bitboard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/bitboard.cpp.s
 .PHONY : bitboard.cpp.s
 
+bitgamestate.o: bitgamestate.cpp.o
+.PHONY : bitgamestate.o
+
+# target to build an object file
+bitgamestate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/bitgamestate.cpp.o
+.PHONY : bitgamestate.cpp.o
+
+bitgamestate.i: bitgamestate.cpp.i
+.PHONY : bitgamestate.i
+
+# target to preprocess a source file
+bitgamestate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/bitgamestate.cpp.i
+.PHONY : bitgamestate.cpp.i
+
+bitgamestate.s: bitgamestate.cpp.s
+.PHONY : bitgamestate.s
+
+# target to generate assembly for a file
+bitgamestate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/bitgamestate.cpp.s
+.PHONY : bitgamestate.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -201,6 +225,78 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+randomNum.o: randomNum.cpp.o
+.PHONY : randomNum.o
+
+# target to build an object file
+randomNum.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/randomNum.cpp.o
+.PHONY : randomNum.cpp.o
+
+randomNum.i: randomNum.cpp.i
+.PHONY : randomNum.i
+
+# target to preprocess a source file
+randomNum.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/randomNum.cpp.i
+.PHONY : randomNum.cpp.i
+
+randomNum.s: randomNum.cpp.s
+.PHONY : randomNum.s
+
+# target to generate assembly for a file
+randomNum.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/randomNum.cpp.s
+.PHONY : randomNum.cpp.s
+
+search.o: search.cpp.o
+.PHONY : search.o
+
+# target to build an object file
+search.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/search.cpp.o
+.PHONY : search.cpp.o
+
+search.i: search.cpp.i
+.PHONY : search.i
+
+# target to preprocess a source file
+search.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/search.cpp.i
+.PHONY : search.cpp.i
+
+search.s: search.cpp.s
+.PHONY : search.s
+
+# target to generate assembly for a file
+search.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/search.cpp.s
+.PHONY : search.cpp.s
+
+time.o: time.cpp.o
+.PHONY : time.o
+
+# target to build an object file
+time.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/time.cpp.o
+.PHONY : time.cpp.o
+
+time.i: time.cpp.i
+.PHONY : time.i
+
+# target to preprocess a source file
+time.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/time.cpp.i
+.PHONY : time.cpp.i
+
+time.s: time.cpp.s
+.PHONY : time.s
+
+# target to generate assembly for a file
+time.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/time.cpp.s
+.PHONY : time.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -216,9 +312,21 @@ help:
 	@echo "... bitboard.o"
 	@echo "... bitboard.i"
 	@echo "... bitboard.s"
+	@echo "... bitgamestate.o"
+	@echo "... bitgamestate.i"
+	@echo "... bitgamestate.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... randomNum.o"
+	@echo "... randomNum.i"
+	@echo "... randomNum.s"
+	@echo "... search.o"
+	@echo "... search.i"
+	@echo "... search.s"
+	@echo "... time.o"
+	@echo "... time.i"
+	@echo "... time.s"
 .PHONY : help
 
 

@@ -18,5 +18,5 @@ void print_bitboard(Bitboard bitboard){
     }
     std::cout<<std::endl;
     std::cout<<"   a b c d e f g h"<<std::endl;
-    std::cout<<"     "<<bitboard.bits.to_ullong()<<std::endl;
+    std::cout<<"   "<<bitboard.bits.to_ullong()<<std::endl;
 }

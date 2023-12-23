@@ -10,7 +10,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/vansh/Codes/Cpp/chess/attack_tables.cpp" "CMakeFiles/my_program.dir/attack_tables.cpp.o" "gcc" "CMakeFiles/my_program.dir/attack_tables.cpp.o.d"
   "/home/vansh/Codes/Cpp/chess/bitboard.cpp" "CMakeFiles/my_program.dir/bitboard.cpp.o" "gcc" "CMakeFiles/my_program.dir/bitboard.cpp.o.d"
+  "/home/vansh/Codes/Cpp/chess/bitgamestate.cpp" "CMakeFiles/my_program.dir/bitgamestate.cpp.o" "gcc" "CMakeFiles/my_program.dir/bitgamestate.cpp.o.d"
   "/home/vansh/Codes/Cpp/chess/main.cpp" "CMakeFiles/my_program.dir/main.cpp.o" "gcc" "CMakeFiles/my_program.dir/main.cpp.o.d"
+  "/home/vansh/Codes/Cpp/chess/randomNum.cpp" "CMakeFiles/my_program.dir/randomNum.cpp.o" "gcc" "CMakeFiles/my_program.dir/randomNum.cpp.o.d"
+  "/home/vansh/Codes/Cpp/chess/search.cpp" "CMakeFiles/my_program.dir/search.cpp.o" "gcc" "CMakeFiles/my_program.dir/search.cpp.o.d"
+  "/home/vansh/Codes/Cpp/chess/time.cpp" "CMakeFiles/my_program.dir/time.cpp.o" "gcc" "CMakeFiles/my_program.dir/time.cpp.o.d"
   )
 
 # Targets to which this target links.
