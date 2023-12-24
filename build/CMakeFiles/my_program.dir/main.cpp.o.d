@@ -172,6 +172,8 @@ CMakeFiles/my_program.dir/main.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
  /usr/include/c++/11/pstl/execution_defs.h \
+ /home/vansh/Codes/Cpp/chess/connect_gui.h \
+ /home/vansh/Codes/Cpp/chess/evaluation.h \
  /home/vansh/Codes/Cpp/chess/search.h /home/vansh/Codes/Cpp/chess/time.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/limits /usr/include/c++/11/ctime \

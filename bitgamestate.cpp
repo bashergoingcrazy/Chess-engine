@@ -2,6 +2,7 @@
 #include "attack_tables.h"
 #include "bitboard.h"
 #include <algorithm>
+#include <cctype>
 #include <iostream>
 #include <iterator>
 #include <sstream>
@@ -40,9 +41,15 @@ int get_move_castle(int move){
 } 
 
 void BitGameState::print_move(int move){
+    char promotedPiece ;
+    char lowercasePromotedPiece;
+    if(get_move_promoted(move)){
+        promotedPiece = ascii_pieces[get_move_promoted(move)];
+        lowercasePromotedPiece = std::tolower(promotedPiece);
+    }
     std::cout<<square_to_coordinates[get_move_source(move)]
         <<square_to_coordinates[get_move_target(move)]
-        <<((get_move_promoted(move)==0)? ' ': ascii_pieces[get_move_promoted(move)]);
+        <<((get_move_promoted(move)==0)? ' ': lowercasePromotedPiece);
 }
 
 void BitGameState::test(){
@@ -85,6 +92,17 @@ void BitGameState::print_board(){
 }
 
 void BitGameState::parse_fen(std::string input){
+    //Initialize the current game state as nothing 
+    for(int i=P; i<=k;i++){
+        bitboards[i] = Bitboard();
+    }
+    for(int i=0; i<=2;i++){
+        occupancies[i] = Bitboard();
+    }
+
+    side = -1;
+    castle = -1;
+    enpassant = no_sq;
 
     std::istringstream fenStream(input);
     std::string token;

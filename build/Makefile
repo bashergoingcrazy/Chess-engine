@@ -201,6 +201,54 @@ bitgamestate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/bitgamestate.cpp.s
 .PHONY : bitgamestate.cpp.s
 
+connect_gui.o: connect_gui.cpp.o
+.PHONY : connect_gui.o
+
+# target to build an object file
+connect_gui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/connect_gui.cpp.o
+.PHONY : connect_gui.cpp.o
+
+connect_gui.i: connect_gui.cpp.i
+.PHONY : connect_gui.i
+
+# target to preprocess a source file
+connect_gui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/connect_gui.cpp.i
+.PHONY : connect_gui.cpp.i
+
+connect_gui.s: connect_gui.cpp.s
+.PHONY : connect_gui.s
+
+# target to generate assembly for a file
+connect_gui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/connect_gui.cpp.s
+.PHONY : connect_gui.cpp.s
+
+evaluation.o: evaluation.cpp.o
+.PHONY : evaluation.o
+
+# target to build an object file
+evaluation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/evaluation.cpp.o
+.PHONY : evaluation.cpp.o
+
+evaluation.i: evaluation.cpp.i
+.PHONY : evaluation.i
+
+# target to preprocess a source file
+evaluation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/evaluation.cpp.i
+.PHONY : evaluation.cpp.i
+
+evaluation.s: evaluation.cpp.s
+.PHONY : evaluation.s
+
+# target to generate assembly for a file
+evaluation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/evaluation.cpp.s
+.PHONY : evaluation.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -315,6 +363,12 @@ help:
 	@echo "... bitgamestate.o"
 	@echo "... bitgamestate.i"
 	@echo "... bitgamestate.s"
+	@echo "... connect_gui.o"
+	@echo "... connect_gui.i"
+	@echo "... connect_gui.s"
+	@echo "... evaluation.o"
+	@echo "... evaluation.i"
+	@echo "... evaluation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

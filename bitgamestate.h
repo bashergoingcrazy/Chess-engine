@@ -30,10 +30,18 @@ const std::string square_to_coordinates[64]{
 enum { P, N, B, R, Q, K, p, n, b, r, q, k};
 enum {all_moves, only_captures};
 
+int encode_move(int s, int t, int p, int pp, int c, int d, int e, int ca);
+int get_move_source(int move);
+int get_move_piece(int move);
+int get_move_target(int move);
+int get_move_promoted(int move);
+int get_move_castle(int move);
+int get_move_double(int move);
+int get_move_enp(int move);
+int get_move_capture(int move);
+
 class BitGameState{
 private:
-
-
 public:
     BitGameState() = default;
 

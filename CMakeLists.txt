@@ -11,4 +11,5 @@ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DtBUG} -Ofast")
 add_executable(my_program main.cpp 
     bitboard.cpp attack_tables.cpp 
     randomNum.cpp bitgamestate.cpp
-    time.cpp search.cpp)
+    time.cpp search.cpp
+    connect_gui.cpp evaluation.cpp)

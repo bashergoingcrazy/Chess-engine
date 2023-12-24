@@ -6,4 +6,6 @@ void perftTest(int depth, BitGameState& bgs);
 
 void mainPerft(int depth, BitGameState& bgs);
 
+void search_position(int depth, BitGameState& bgs);
+
 unsigned long long getNodeCount();

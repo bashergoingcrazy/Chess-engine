@@ -1,10 +1,90 @@
 
 #include "search.h"
 #include "bitgamestate.h"
+#include "evaluation.h"
 #include "time.h"
+#include <algorithm>
 #include <iostream>
 #include <vector>
 unsigned long long nodes = 0ULL;
+int ply = 0;
+int best_move = 0;
+
+int negamax(int alpha, int beta, int depth, BitGameState& bgs)
+{
+    // Recusion escape condition
+    if(depth == 0 ) 
+        return evaluate(bgs);
+
+    // increment nodes count
+    nodes++;
+
+    int in_check = bgs.is_square_attacked(((bgs.side==white)?bgs.bitboards[K].get_lsb_index():
+                bgs.bitboards[k].get_lsb_index())   ,bgs.side ^1);
+
+    //legal moves counter
+    int legal_moves;
+
+    //int best move so far
+    int best_sofar;
+    int old_alpha = alpha;
+
+    std::vector<int> move_list = bgs.generate_moves();
+
+    for(const auto &move: move_list)
+    {
+        BitGameState clone;
+        clone = std::move(bgs);
+
+        ply++;
+
+        if(!clone.make_move(move,all_moves))
+        {
+            ply--;
+            continue;
+        }
+        int score = -negamax(-beta, -alpha, depth-1,clone);
+        
+        ply --;
+        // fail-hard beta cutoff
+        if(score >= beta)
+        {
+            // node (move) fails high
+            return beta;
+        }
+
+        if(score > alpha)
+        {
+            // PV node (move)
+            alpha = score;
+            if(ply == 0){
+                best_sofar = move;
+            }
+        }
+        
+    }
+
+    if(old_alpha != alpha)
+        //initialize best move
+        best_move = best_sofar;
+
+    // node (move) fails low 
+    return alpha;
+}
+
+
+void search_position(int depth, BitGameState& bgs)
+{
+    //find best move within a given position
+    int score = negamax(-50000, 50000, depth, bgs);
+    std::cout<<"bestmove ";
+    bgs.print_move(best_move);
+    std::cout<<std::endl;
+    std::cout<<"which was :"<<best_move<<std::endl;
+}
+
+
+
 
 void perftTest(int depth,BitGameState& bgs){
     if (depth == 0){
